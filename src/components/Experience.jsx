@@ -8,7 +8,7 @@ export default function Experience() {
   return (
     <section id="experience" className="bg-gray-100 dark:bg-gray-900 py-24">
       <div className="mx-auto max-w-4xl px-4">
-        {/* heading */}
+    
         <motion.h2
           className="mb-10 text-3xl font-bold md:text-4xl"
           initial="hidden"
@@ -20,7 +20,7 @@ export default function Experience() {
           Experience
         </motion.h2>
 
-        {/* timeline */}
+      
         <div className="relative border-l pl-6">
           {EXPERIENCE.map((exp, i) => (
             <motion.div

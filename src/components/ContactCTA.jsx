@@ -12,7 +12,7 @@ export default function ContactCTA() {
       className="bg-gradient-to-r from-violet-700 via-purple-700 to-indigo-700 py-24 text-white"
     >
       <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 text-center">
-        {/* heading */}
+   
         <motion.h2
           className="text-3xl font-bold md:text-4xl"
           variants={fadeUp}
@@ -24,7 +24,6 @@ export default function ContactCTA() {
           Let’s build something great together.
         </motion.h2>
 
-        {/* sub text */}
         <motion.p
           className="max-w-xl text-lg text-white/90"
           variants={fadeUp}
@@ -36,7 +35,6 @@ export default function ContactCTA() {
           Reach out via email or connect with me on social media.
         </motion.p>
 
-        {/* buttons */}
         <motion.div
           className="flex flex-wrap items-center justify-center gap-4"
           variants={fadeUp}

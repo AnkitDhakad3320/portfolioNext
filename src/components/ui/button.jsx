@@ -1,12 +1,5 @@
 import React from "react";
 
-/**
- * Tailwind‑flavoured button with a tiny variant system.
- * Usage:
- *   <Button>Primary</Button>
- *   <Button variant="secondary">Cancel</Button>
- *   <Button variant="outline">Learn more</Button>
- */
 export const buttonVariants = {
   primary:   "bg-indigo-600 text-white hover:bg-indigo-700",
   secondary: "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50",

@@ -34,22 +34,3 @@ export default function RootLayout({ children }) {
 }
 
 
-// import "./globals.css";
-// import { ThemeProvider } from "next-themes";
-
-// export const metadata = {
-//   title: "Ankit | Portfolio",
-//   description: "Frontend dev portfolio built with Next.js & Tailwind",
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en" > {/* smooth scroll here */}
-//       <body>
-//         <ThemeProvider attribute="class" defaultTheme="light">
-//           {children}
-//         </ThemeProvider>
-//       </body>
-//     </html>
-//   );
-// }

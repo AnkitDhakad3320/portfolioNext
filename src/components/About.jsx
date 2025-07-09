@@ -1,30 +1,3 @@
-// "use client";
-// import { motion } from "framer-motion";
-// import { fadeUp } from "@/lib/motionVariants";
-
-
-
-// export default function About() {
-//   return (
-//     <section id="about" className="py-16 bg-white dark:bg-gray-900">
-//       <motion.div
-//         variants={fadeUp}
-//         initial="hidden"
-//         whileInView="show"
-//         viewport={{ once: true, amount: 0.4 }}
-//         className="max-w-4xl mx-auto px-4 text-center"
-//       >
-//         <h2 className="text-3xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">
-//           About Me
-//         </h2>
-//         <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-//           I'm Ankit, a frontend developer who turns designs into clean, performant code using React & Tailwind.
-//         </p>
-//       </motion.div>
-//     </section>
-//   );
-// }
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -33,7 +6,7 @@ import { fadeUp } from "@/lib/motionVariants";
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-5xl px-4 py-24">
-      {/* heading */}
+    
       <motion.h2
         className="mb-6 text-3xl font-bold md:text-4xl"
         initial="hidden"
@@ -45,7 +18,7 @@ export default function About() {
         About Me
       </motion.h2>
 
-      {/* blurb */}
+     
       <motion.p
         className="leading-8 text-gray-700 dark:text-gray-300"
         initial="hidden"
@@ -62,7 +35,7 @@ export default function About() {
         meet‑ups.
       </motion.p>
 
-      {/* skills grid */}
+   
       <motion.div
         className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         initial="hidden"

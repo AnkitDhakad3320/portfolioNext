@@ -1,31 +1,3 @@
-
-// import DarkModeToggle from "@/components/DarkModeToggle";
-// import { NAV_ITEMS } from "@/data/siteData";
-
-
-
-
-// export default function Header() {
-//   return (
-//     <header className="sticky top-0 z-50 bg-white shadow-md">
-//       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-//         <div className="font-bold text-xl text-indigo-600">Ankit.dev</div>
-//         <nav className="space-x-4">
-//           <a href="#about" className="text-gray-700 hover:text-indigo-600">About</a>
-//           <a href="#projects" className="text-gray-700 hover:text-indigo-600">Projects</a>
-//           <a href="#contact" className="text-gray-700 hover:text-indigo-600">Contact</a>
-//         </nav>
-//         <DarkModeToggle />
-//         <NAV_ITEMS.map(item => (
-//   <a key={item.href} href={item.href}>{item.label}</a>
-// )) />
-//       </div>
-      
-//     </header>
-//   );
-// }
-
-
 "use client";
 
 import { useState } from "react";
@@ -40,12 +12,12 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/60 dark:bg-gray-900/60">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
-        {/* logo */}
+      
         <a href="#hero" className="font-bold text-lg tracking-tight md:text-xl">
           Ankit.dev
         </a>
 
-        {/* mobile hamburger */}
+    
         <button
           className="md:hidden"
           onClick={() => setOpen((prev) => !prev)}
@@ -54,7 +26,7 @@ export default function Header() {
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* nav links */}
+      
         <ul
           className={`${
             open ? "flex" : "hidden"
@@ -72,7 +44,6 @@ export default function Header() {
             </li>
           ))}
 
-          {/* call‑to‑action */}
           <li className="md:ml-4">
             <Button asChild size="sm">
               <a href="#contact">Hire Me</a>
